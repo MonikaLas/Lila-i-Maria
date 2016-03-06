@@ -1,23 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p style="color:red;">
   <strong>Author:</strong>
   <%= @book.author %>
 </p>
 
-<p>
+<p class="akapit">
   <strong>Title:</strong>
   <%= @book.title %>
 </p>
 
-<p>
+<p class="akapit">
   <strong>Isbn:</strong>
   <%= @book.isbn %>
 </p>
 
-<p>
+<p id="akapit1">
   <strong>Description:</strong>
   <%= @book.description %>
+</p>
+
+<p class="akapit">
+  <strong>Opinion:</strong>
+  <%= @book.opinion %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
